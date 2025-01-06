@@ -30,7 +30,7 @@ jobs:
             -H "Client-Secret: ${{ secrets.INTRUCEPT_CLIENT_SECRET }}" \
             -F "projectZipFile=@project.zip" \
             -F "applicationId=${{ secrets.INTRUCEPT_APPLICATION_ID }}" \
-            -F "scanName=Golang SAST Scan - ${{ github.sha }}" \
+            -F "scanName=Ant-goVWA-Golang SAST Scan - ${{ github.sha }}" \
             -F "language=kotlin" \
             https://appsecops-api.intruceptlabs.com/api/v1/integrations/sast-scans)
           
